@@ -1,4 +1,15 @@
 @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
-  
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.logo-text {
+  @apply bg-gradient-to-r from-purple-400 via-purple-500 to-indigo-400 text-transparent bg-clip-text font-semibold text-[1.5rem];
+}
+
+.dropdown-item {
+  @apply block w-full px-2 py-1 rounded-md data-[focus]:text-white/80  data-[focus]:bg-gradient-to-r data-[focus]:from-purple-400 data-[focus]:via-purple-500 data-[focus]:to-indigo-400 transition duration-200 ease-in-out;
+}
