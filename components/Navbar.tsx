@@ -10,8 +10,8 @@ const navitems = [
 
 const Navbar = () => {
   return (
-    <nav className="flex px-8 lg:px-20 py-[10px] justify-between bg-white/25 backdrop-blur-lg items-center border-b ">
-      <Link href={"/"} className="inline-flex items-center gap-4">
+    <nav className="flex px-8 lg:px-20 py-[10px] justify-between bg-white/25 backdrop-blur-lg w-full items-center border-b ">
+      <Link href={"/"} className="inline-flex items-center gap-4 ">
         <Image src="/Logo.png" width={50} height={50} alt="Dev_Logo" />
         <span className="logo-text">DevBlog</span>
       </Link>
@@ -19,12 +19,17 @@ const Navbar = () => {
         <li>
           <Link href={"/"}>Write</Link>
         </li>
-        <SignedIn>
-          <UserButton userProfileMode="navigation" userProfileUrl="/profile" />
-        </SignedIn>
-        <SignedOut>
-          <ProfileDropdown />
-        </SignedOut>
+        <li>
+          <SignedIn>
+            <UserButton
+              userProfileMode="navigation"
+              userProfileUrl="/profile"
+            />
+          </SignedIn>
+          <SignedOut>
+            <ProfileDropdown />
+          </SignedOut>
+        </li>
       </ul>
     </nav>
   );
