@@ -47,16 +47,18 @@ function ProfileDropdown() {
     <Menu>
       <MenuButton>
         <Image
-          className="inline-block h-8 w-8 rounded-full ring-2 ring-white/45"
-          width={40}
-          height={40}
-          alt=""
-          src={""}
+          className="inline-block h-12 w-12 rounded-full ring-2 ring-white/45 mix-blend-multiply"
+          width={50}
+          height={50}
+          alt="user avatar"
+          src={"/icons/avatar.jpg"}
         />
       </MenuButton>
       <MenuItems
-        anchor="bottom"
-        className={"bg-white/70  p-2 rounded-md w-32 mt-4 space-y-2"}
+        anchor="bottom end"
+        className={
+          "bg-white/35 px-2 py-3 rounded-md w-32 mt-4 space-y-2 shadow-lg right-8 left-0"
+        }
       >
         {navitems.map((nav) => {
           return (

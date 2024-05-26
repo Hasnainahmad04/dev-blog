@@ -13,5 +13,21 @@ body {
 }
 
 .dropdown-item {
-  @apply block w-full px-2 py-1 rounded-md data-[focus]:text-white/80  data-[focus]:bg-gradient-to-r data-[focus]:from-purple-400 data-[focus]:via-purple-500 data-[focus]:to-indigo-400 transition duration-200 ease-in-out;
+  @apply block w-full px-2 py-1 font-semibold rounded-md data-[focus]:text-white/80  data-[focus]:bg-gradient-to-r data-[focus]:from-purple-400 data-[focus]:via-purple-500 data-[focus]:to-indigo-400 transition duration-200 ease-in-out;
+}
+
+.tiptap .is-empty::before {
+  content: attr(data-placeholder);
+  float: left;
+  color: #ced4da;
+  pointer-events: none;
+  height: 0;
+}
+
+.tiptap:focus {
+  @apply outline-none;
+}
+
+.floating-menu-active {
+  @apply rotate-45 transform-gpu transition duration-500 ease-in-out;
 }
