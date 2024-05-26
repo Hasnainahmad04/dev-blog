@@ -56,7 +56,7 @@ function ProfileDropdown() {
       </MenuButton>
       <MenuItems
         anchor="bottom"
-        className={"bg-white/70  p-2 rounded-md w-32 mt-4 space-y-2"}
+        className={"bg-white/35 p-2 rounded-md w-32 mt-4 space-y-2 shadow-lg"}
       >
         {navitems.map((nav) => {
           return (

@@ -17,11 +17,12 @@
     "@tiptap/pm": "^2.4.0",
     "@tiptap/react": "^2.4.0",
     "@tiptap/starter-kit": "^2.4.0",
+    "babel-plugin-react-compiler": "^0.0.0-experimental-592953e-20240517",
     "clsx": "^2.1.1",
-    "next": "14.2.3",
+    "next": "^15.0.0-rc.0",
     "nextjs-toploader": "^1.6.12",
-    "react": "^18",
-    "react-dom": "^18",
+    "react": "^19.0.0-rc-935180c7e0-20240524",
+    "react-dom": "^19.0.0-rc-935180c7e0-20240524",
     "tailwind-merge": "^2.3.0"
   },
   "devDependencies": {
